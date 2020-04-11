@@ -84,7 +84,7 @@ The following shows the PostgresSQL dependency that is already included in the `
 </dependency>
 ```
 
-Build the app. The `build_app` command downloads your JDBC driver and automatically deploys it to the `$HAZELCAST_ADDON_WORKSPACE/lib` directory.
+Build the app. The `build_app` command downloads your JDBC driver and automatically deploys it to the `$PADOGRID_WORKSPACE/lib` directory.
 
 ```console
 cd bin_sh
