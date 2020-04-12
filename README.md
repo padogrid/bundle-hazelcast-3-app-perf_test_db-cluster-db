@@ -58,7 +58,7 @@ start_cluster
 show_log
 ```
 
-## Running `test_group`
+## Ingesting Data
 
 The `test_group` script creates mock data for `Customer` and `Order` objects and ingests them into the Hazelcast cluster which in turn writes to MySQL via the `MapStorePkDbImpl` plugin included in the PadoGrid distribution. The same plugin is also registered to retrieve data from MySQL for cache misses in the cluster.
 
