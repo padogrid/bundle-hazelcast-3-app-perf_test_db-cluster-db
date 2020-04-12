@@ -52,6 +52,10 @@ Run the cluster.
 
 ```console
 start_cluster
+
+# Monitor the log file. Hibernate has been configured to log SQL statements
+# executed by the MapStorePkDbImpl plugin.
+show_log
 ```
 
 ## Running `test_group`
@@ -62,6 +66,8 @@ The `test_group` script creates mock data for `Customer` and `Order` objects and
 cd_app perf_test_db; cd bin_sh
 ./test_group -prop ../etc/group-factory.properties  -run
 ```
+
+You should see SQL statements being logged if you are running `show_log`.
 
 ## Replacing MySQL with Another Database
 
