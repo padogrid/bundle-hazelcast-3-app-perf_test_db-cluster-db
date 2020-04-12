@@ -1,6 +1,6 @@
 # Bundle: db
 
-The `db` bundle is preconfigured to synchronize Hazelcast with MySQL running on localhost. It includes the `db` cluster and `perf_test_db` app to read/write from/to Hazelcast and MySQL. It also includes instructions for replacing MySQL with another database.
+The `db` bundle is preconfigured to synchronize Hazelcast with MySQL running on `localhost`. It includes the `db` cluster and `perf_test_db` app to read/write from/to Hazelcast and MySQL. It also includes instructions for replacing MySQL with another database.
 
 ## Installing Bundle
 
@@ -45,8 +45,7 @@ cd_app perf_test_db; cd bin_sh
 First, add at least two (2) members to the `db` cluster. All bundles come without members.
 
 ```console
-add_member
-add_member
+add_member; add_member
 ```
 
 Run the cluster.
@@ -57,7 +56,7 @@ start_cluster
 
 ## Running `test_group`
 
-The `test_group` script creates mock data for `Customer` and `Order` objects and ingests them into the Hazelcast cluster which in turn writes to MySQL via the `MapStorePkDbImpl` plugin included in the `hazelcast-addon` distribution. The same plugin is also registered to retrieve data from MySQL for cache misses in the cluster.
+The `test_group` script creates mock data for `Customer` and `Order` objects and ingests them into the Hazelcast cluster which in turn writes to MySQL via the `MapStorePkDbImpl` plugin included in the PadoGrid distribution. The same plugin is also registered to retrieve data from MySQL for cache misses in the cluster.
 
 ```console
 cd_app perf_test_db; cd bin_sh
@@ -116,8 +115,7 @@ Go to the [`nw` Schema](#nw-schema) section and continue.
 
 ## Tearing Down
 
-Stop the cluster.
-
 ```console
+# Stop the cluster.
 stop_cluster
 ```
