@@ -5,7 +5,7 @@ The `db` bundle is preconfigured to synchronize Hazelcast with MySQL running on 
 ## Installing Bundle
 
 ```console
-install_bundle -download hazelcast-3-cluster-app-db-perf_test_db
+install_bundle -download bundle-hazelcast-3-app-perf_test_db-cluster-db
 ```
 
 ## Use Case
